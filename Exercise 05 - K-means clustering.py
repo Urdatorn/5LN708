@@ -1,5 +1,5 @@
 import unittest
-from exercise2 import NaiveKMeans
+from exercise5 import NaiveKMeans
 import numpy as np
 
 class TestNaiveKMeans(unittest.TestCase):
