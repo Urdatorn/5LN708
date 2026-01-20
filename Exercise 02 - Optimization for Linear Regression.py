@@ -2,6 +2,12 @@ import unittest
 from exercise2 import LinearRegression
 import numpy as np
 
+class TestSimpleLinearRegressionInstatiation(unittest.TestCase):
+    def test_instantiation(self):
+        self.assertEqual(LinearRegression.__init__.__code__.co_argcount, 3, 
+                         msg="Have you added all the arguments to the contructor?")
+
+
 class TestLinearRegressionFirstOrder(unittest.TestCase):
 
     def setUp(self):

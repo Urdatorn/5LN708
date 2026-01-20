@@ -4,6 +4,8 @@ import numpy as np
 
 class TestSimpleLinearRegressionInstatiation(unittest.TestCase):
     def test_instantiation(self):
+        self.assertEqual(SimpleLinearRegression.__init__.__code__.co_argcount, 
+                          1, msg="There's no need to add arguments to the constructor.")
         try:
             SimpleLinearRegression()
         except NotImplementedError:
